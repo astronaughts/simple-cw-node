@@ -60,9 +60,9 @@ client.init({ token: 'YOUR_TOKEN' });
 client
     .get('me')
     .done(function (res) {
-        console.log(res.body);
+        console.log(res.body)
     })
-    fail(function (err) {
+    .fail(function (err) {
         console.error(err);
     });
 ```
