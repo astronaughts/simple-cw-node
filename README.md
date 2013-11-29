@@ -5,7 +5,7 @@ A simple ChatWork API client for Node.js. ( **UNOFFICIAL** )
 
 ## Installation
 
-```
+```bash
 $ npm install simple-cw-node
 ```
 
@@ -25,7 +25,7 @@ $ npm install simple-cw-node
 
 The minimal you'll need to have is:
 
-```
+```js
 var CW = require('simple-cw-node'),
     client = CW();
 
@@ -48,7 +48,7 @@ client.post('rooms', {
 
 ### Deferred support
 
-```
+```js
 var CW = require('simple-cw-node'),
     client = CW()
     Deferred = client.Deferred;
