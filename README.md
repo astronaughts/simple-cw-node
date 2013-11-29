@@ -40,6 +40,7 @@ client.get('me', function (err, res) {
 // create room.
 client.post('rooms', {
     name: 'room',
+    members_admin_ids: '123456789,987654321',
     description: 'description'
 }, function (err, res) {
     console.log('created.');
@@ -50,7 +51,7 @@ client.post('rooms', {
 
 ```js
 var CW = require('simple-cw-node'),
-    client = CW()
+    client = CW(),
     Deferred = client.Deferred;
 
 // initialize.
