@@ -4,7 +4,7 @@
   "description": "A simple ChatWork API client for Node.js (UNOFFICIAL)",
   "main": "lib/chatwork.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bootstrap"
   },
   "repository": {
     "type": "git",
