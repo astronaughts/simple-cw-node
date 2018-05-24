@@ -30,7 +30,15 @@ var CW = require('simple-cw-node'),
     client = CW();
 
 // initialize.
-client.init({ token: 'YOUR_TOKEN' });
+client.init({
+    token: 'YOUR_LEGACY_TOKEN'
+});
+
+// in the case of OAuth
+client.init({
+    type: 'oauth',
+    token: 'YOUR_OAUTH_TOKEN',
+})
 
 // get your info.
 client.get('me', function (err, res) {
