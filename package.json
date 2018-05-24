@@ -1,18 +1,18 @@
 {
   "name": "simple-cw-node",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "A simple ChatWork API client for Node.js (UNOFFICIAL)",
   "main": "lib/chatwork.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bootstrap"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/astronaughts/simple-cw-node"
   },
   "dependencies": {
-    "superagent": "~0.15.7",
-    "lodash": "~2.3.0",
+    "lodash": "^4.17.10",
+    "superagent": "^3.8.3",
     "underscore.deferred": "~0.4.0"
   },
   "keywords": [
@@ -23,10 +23,5 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/astronaughts/simple-cw-node/issues"
-  },
-  "devDependencies": {
-    "grunt-contrib-jshint": "~0.7.2",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt": "~0.4.2"
   }
 }
